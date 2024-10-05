@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio - Backend Developer Junior</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1>¡Hola, soy un Desarrollador Backend Junior!</h1>
+        <p>Con experiencia en JavaScript, Node.js, algoritmos y estructuras de datos.</p>
+        <button id="contactButton">Contáctame</button>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <img src="https://media.licdn.com/dms/image/v2/D4D03AQFaU571xvrTOA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1709345564661?e=1733356800&v=beta&t=TNNitmqOzdiM2PNtgsSNHDhGLPOBmc8zFY6ep7SXHMA" alt="Foto de Perfil" class="profile-pic">
+            <div class="about-text">
+                <h2>Sobre mí</h2>
+                <p>Soy un desarrollador web backend junior con experiencia en JavaScript, Node.js, algoritmos, estructuras de datos y control de versiones con GIT. Me apasiona crear aplicaciones eficientes, escalables y de alto rendimiento.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Habilidades</h2>
+        <div class="skills-container">
+            <div class="skill"><i class="fab fa-js-square"></i> JavaScript</div>
+            <div class="skill"><i class="fab fa-node-js"></i> Node.js</div>
+            <div class="skill"><i class="fas fa-code"></i> Algoritmos y Estructuras de Datos</div>
+            <div class="skill"><i class="fas fa-code-branch"></i> GIT</div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Proyectos</h2>
+        <div class="project-container">
+            <div class="project">
+                <h3>Proyecto 1: Sistema de Gestión de Tareas</h3>
+                <p>Desarrollado en Node.js y JavaScript para gestionar tareas de manera eficiente, aplicando algoritmos de optimización.</p>
+                <a href="https://github.com/mi-proyecto-tareas" class="project-link" target="_blank">Ver en GitHub</a>
+            </div>
+            <div class="project">
+                <h3>Proyecto 2: API RESTful para E-commerce</h3>
+                <p>Implementación de una API REST utilizando Node.js, MongoDB y Docker para un sistema de ventas online.</p>
+                <a href="https://github.com/mi-proyecto-api" class="project-link" target="_blank">Ver en GitHub</a>
+            </div>
+            <div class="project">
+                <h3>Proyecto 3: Sistema de Control de Versiones</h3>
+                <p>Desarrollado para automatizar el control de versiones utilizando GIT y Node.js, asegurando integridad en el ciclo de desarrollo.</p>
+                <a href="https://github.com/mi-proyecto-control" class="project-link" target="_blank">Ver en GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contacto</h2>
+        <form id="contactForm">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Correo:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit" id="contactButton">Enviar</button>
+        </form>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 Mi Portafolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
