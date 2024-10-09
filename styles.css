@@ -8,15 +8,30 @@
 /* Estilos generales */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f3f4f6;
+    background: url('tu-imagen-de-fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
     color: #333;
+}
+
+/* Filtro oscuro en el fondo para mayor legibilidad */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Añadir una capa oscura */
+    z-index: -1; /* Asegurarse de que el contenido esté sobre el filtro */
 }
 
 /* Encabezado */
 header {
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.9); /* Transparente para integrarse con la imagen */
     color: white;
     padding: 10px;
+    position: relative;
+    z-index: 1;
 }
 
 nav ul {
@@ -41,10 +56,11 @@ nav ul li a:hover {
 
 /* Sección hero */
 #hero {
-    background: linear-gradient(135deg, #1d2b64, #f8cdda);
+    background: rgba(29, 43, 100, 0.8); /* Fondo semitransparente para el hero */
     color: white;
     text-align: center;
     padding: 100px 20px;
+    border-radius: 15px;
 }
 
 #hero h1 {
@@ -63,6 +79,8 @@ nav ul li a:hover {
     padding: 50px 20px;
     max-width: 1200px;
     margin: 0 auto;
+    background-color: rgba(243, 244, 246, 0.9); /* Fondo claro semitransparente */
+    border-radius: 15px;
 }
 
 .profile-pic {
@@ -81,14 +99,18 @@ nav ul li a:hover {
 .section {
     padding: 50px 20px;
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
-/* Sección habilidades */
 .skills-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+    background-color: rgba(243, 244, 246, 0.9); /* Fondo claro semitransparente */
+    padding: 20px;
+    border-radius: 15px;
 }
 
 .skill {
@@ -100,10 +122,15 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     gap: 10px;
+    transition: transform 0.3s ease;
 }
 
 .skill i {
     font-size: 1.5rem;
+}
+
+.skill:hover {
+    transform: scale(1.1);
 }
 
 /* Estilos para íconos específicos */
@@ -155,7 +182,7 @@ nav ul li a:hover {
 }
 
 .project {
-    background-color: #f3f4f6;
+    background-color: rgba(243, 244, 246, 0.9); /* Fondo claro semitransparente */
     border: 2px solid #1d2b64;
     border-radius: 10px;
     padding: 20px;
@@ -184,6 +211,9 @@ nav ul li a:hover {
 #contactForm {
     max-width: 600px;
     margin: 0 auto;
+    background-color: rgba(243, 244, 246, 0.9); /* Fondo claro semitransparente */
+    padding: 20px;
+    border-radius: 15px;
 }
 
 #contactForm input,
@@ -210,7 +240,7 @@ nav ul li a:hover {
 
 /* Pie de página */
 footer {
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.9); /* Transparente para integrar con el fondo */
     color: white;
     text-align: center;
     padding: 10px;
