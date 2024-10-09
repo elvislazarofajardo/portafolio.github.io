@@ -1,15 +1,18 @@
+/* Reinicio de estilos básicos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilos generales */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f3f4f6;
     color: #333;
 }
 
+/* Encabezado */
 header {
     background-color: #333;
     color: white;
@@ -36,6 +39,7 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Sección hero */
 #hero {
     background: linear-gradient(135deg, #1d2b64, #f8cdda);
     color: white;
@@ -51,6 +55,7 @@ nav ul li a:hover {
     font-size: 1.2rem;
 }
 
+/* Sección sobre mí */
 #about .container {
     display: flex;
     align-items: center;
@@ -72,11 +77,13 @@ nav ul li a:hover {
     max-width: 60%;
 }
 
+/* Secciones generales */
 .section {
     padding: 50px 20px;
     text-align: center;
 }
 
+/* Sección habilidades */
 .skills-container {
     display: flex;
     justify-content: center;
@@ -95,6 +102,52 @@ nav ul li a:hover {
     gap: 10px;
 }
 
+.skill i {
+    font-size: 1.5rem;
+}
+
+/* Estilos para íconos específicos */
+.skill.js-icon i {
+    color: #f0db4f; /* Amarillo para JavaScript */
+}
+
+.skill.node-icon i {
+    color: #68a063; /* Verde para Node.js */
+}
+
+.skill.git-icon i {
+    color: #f05033; /* Rojo para Git */
+}
+
+.skill.npm-icon i {
+    color: #cb3837; /* Rojo para npm */
+}
+
+.skill.mysql-icon i {
+    color: #00758f; /* Azul para MySQL */
+}
+
+.skill.jwt-icon i {
+    color: #000000; /* Negro para JWT */
+}
+
+.skill.pm2-icon i {
+    color: #2baf2b; /* Verde para PM2 */
+}
+
+.skill.postman-icon i {
+    color: #ef5b25; /* Naranja para Postman */
+}
+
+.skill.api-icon i {
+    color: #e34f26; /* Naranja para API REST */
+}
+
+.skill.software-icon i {
+    color: #5d6d7e; /* Gris para Ingeniería de Software */
+}
+
+/* Sección proyectos */
 .project-container {
     display: flex;
     justify-content: space-around;
@@ -127,12 +180,14 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Formulario de contacto */
 #contactForm {
     max-width: 600px;
     margin: 0 auto;
 }
 
-#contactForm input, #contactForm textarea {
+#contactForm input,
+#contactForm textarea {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -153,6 +208,7 @@ nav ul li a:hover {
     background-color: #f8cdda;
 }
 
+/* Pie de página */
 footer {
     background-color: #333;
     color: white;
